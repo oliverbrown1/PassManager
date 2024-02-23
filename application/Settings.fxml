@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="781.0" prefWidth="705.0" style="-fx-background-color: #000000;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsController">
+   <children>
+      <ImageView fitHeight="726.0" fitWidth="639.0" layoutX="39.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="59.0" layoutY="71.0" prefHeight="639.0" prefWidth="587.0" style="-fx-border-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="227.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="47.0" fitWidth="51.0" layoutX="153.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@settings.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="24.0" layoutY="99.0" prefHeight="203.0" prefWidth="166.0" spacing="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To change username, please enter details below:" wrappingWidth="148.455078125" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="current username:" />
+                  <TextField fx:id="currentUsernameField" prefWidth="138.0" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="new username:" />
+                  <TextField fx:id="newUsernameField" prefWidth="140.0" />
+               </children></VBox>
+            <VBox layoutX="211.0" layoutY="92.0" prefHeight="266.0" prefWidth="166.0" spacing="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To change password, please enter details below and confirm:" wrappingWidth="148.455078125" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="current password:" />
+                  <TextField fx:id="currentPasswordField" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="new password:" />
+                  <PasswordField fx:id="newPasswordField" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="confirm password:" />
+                  <PasswordField fx:id="confirmPasswordField" />
+               </children></VBox>
+            <VBox layoutX="399.0" layoutY="99.0" prefHeight="231.0" prefWidth="166.0" spacing="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To reset the account (all user info and password details), please enter details below:" wrappingWidth="148.455078125" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="current username:" />
+                  <TextField fx:id="resetUsernameField" prefWidth="138.0" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="current password:" />
+                  <PasswordField fx:id="resetPasswordField" />
+               </children></VBox>
+            <Button fx:id="setUsername" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="307.0" mnemonicParsing="false" onAction="#changeUsername" prefHeight="25.0" prefWidth="73.0" text="Set" textFill="WHITE" />
+            <Button fx:id="setPassword" alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="377.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="25.0" prefWidth="73.0" text="Set" textFill="WHITE" />
+            <Button fx:id="resetAccount" alignment="CENTER" contentDisplay="CENTER" layoutX="446.0" layoutY="346.0" mnemonicParsing="false" onAction="#resetAccount" prefHeight="25.0" prefWidth="73.0" text="Set" textFill="WHITE" />
+            <Line endX="-100.0" endY="329.0" layoutX="298.0" layoutY="92.0" startX="-100.0" stroke="#666666" />
+            <Line endX="-100.0" endY="329.0" layoutX="487.0" layoutY="92.0" startX="-100.0" stroke="#666666" />
+            <Line endX="439.0" layoutX="124.0" layoutY="446.0" startX="-100.0" stroke="#666666" />
+            <Button layoutX="263.0" layoutY="585.0" mnemonicParsing="false" onAction="#goback" text="Go Back" textFill="WHITE" />
+            <Button layoutX="251.0" layoutY="528.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="94.0" text="Logout" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="info" layoutX="339.0" layoutY="6.0" text="Label" />
+   </children>
+</AnchorPane>

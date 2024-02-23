@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="passwordHelpPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="800.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ResetAccountController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6666ff" height="250.0" layoutX="-7.0" stroke="#6666ff" strokeType="INSIDE" width="807.0" />
+      <Text fill="WHITE" layoutX="179.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="PassManager" wrappingWidth="443.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="innerArea" layoutX="175.0" layoutY="125.0" prefHeight="322.0" prefWidth="443.0" style="-fx-background-color: #333333;">
+         <children>
+            <Button fx:id="cancelButton" alignment="CENTER" layoutX="129.0" layoutY="277.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="23.0" prefWidth="186.0" text="cancel" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetAccountButton" layoutX="166.0" layoutY="208.0" mnemonicParsing="false" onAction="#resetAccount" prefHeight="25.0" prefWidth="112.0" text="Delete Account" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="11.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="check" layoutX="214.0" layoutY="170.0" mnemonicParsing="false" />
+            <TextArea editable="false" layoutX="73.0" layoutY="100.0" prefHeight="47.0" prefWidth="297.0" text="Account will be permanently deleted! &#10;Please confirm by ticking the box below" />
+            <TextField fx:id="usernameDeleteField" layoutX="147.0" layoutY="50.0" />
+            <Text fill="WHITE" layoutX="147.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter username" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

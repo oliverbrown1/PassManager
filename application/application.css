@@ -1,0 +1,54 @@
+.root{
+	-fx-font-family: "Courier New";
+}
+
+/*text*/
+.text-input{
+	-fx-text-fill: #FFFFFF;
+	-fx-font-size: 14px;
+}
+.text-area  .content{
+    -fx-background-color: #333333;
+}
+.text-area{
+	-fx-text-fill: #FFFFFF;
+}
+.text-field {
+	-fx-background-color: #808080;
+	-fx-pref-width: 149px;
+	-fx-pref-height: 23px;
+}
+#notesArea .content{
+	-fx-background-color: #FFD966;
+}
+#searchField{
+	-fx-pref-width: 150px;
+	-fx-pref-height: 23px;
+}
+#notesArea{
+	-fx-text-fill: #000000;
+}
+
+/*Buttons*/
+.button{
+	-fx-background-color: #333333;
+	-fx-border-color: #4D4D4D;
+}
+#exitButton{
+	-fx-border-color: #333333;
+}
+#forgotPasswordButton{
+	-fx-border-color: #333333;
+}
+
+/*Lists*/
+.list-view .list-cell{
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #333333;
+}
+.list-view .list-cell:hover {
+	-fx-background-color: #808080;
+}
+.list-view .list-cell:selected {
+	-fx-background-color: #808080;
+}
